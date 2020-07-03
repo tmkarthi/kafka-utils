@@ -14,7 +14,7 @@ type Settings struct {
 	ServerHost  string `short:"s" description:"Kafka server host" default:"localhost:9092"`
 	Topic       string `short:"t" description:"Topic to publish to" default:"sample"`
 	Key         string `short:"k" description:"Message Key. If -m is set as +, this should be either '+' for reading from stdin or key value for sending same key for all messages."`
-	MessageFile string `short:"m" description:"File containing message value. If specified as '-', will read from stdin till an empty line is encountered. If specified as '+', every line in stdin will be published as one message till killed through ctrl+c. If value of '+' is accompanied by -k with 'true', every odd numbered lines will be considered as key." required:"true"`
+	MessageFile string `short:"m" description:"File containing message value. If specified as '-', will read from stdin till an empty line is encountered. If specified as '+', every line in stdin will be published as one message till killed through ctrl+c. If value of '+' is accompanied by -k with '+', every odd numbered lines will be considered as key." required:"true"`
 }
 
 func main() {

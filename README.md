@@ -18,7 +18,7 @@ Application Options:
               key value for sending same key for all messages.
   -m=         File containing message value. If specified as '-', will read from stdin till an empty
               line is encountered. If specified as '+', every line in stdin will be published as one
-              message till killed through ctrl+c. If value of '+' is accompanied by -k with 'true',
+              message till killed through ctrl+c. If value of '+' is accompanied by -k with '+',
               every odd numbered lines will be considered as key.
 
 Help Options:
