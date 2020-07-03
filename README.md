@@ -1,8 +1,13 @@
 # kafka-utils
 Utils for working with Kafka
 
-# simple-kafka-producer
+# Installation
+To install, run
 
+    go get github.com/tmkarthi/kafka-utils/...
+
+# simple-kafka-producer
+```
 Usage:
   simple-kafka-producer [OPTIONS]
 
@@ -18,9 +23,9 @@ Application Options:
 
 Help Options:
   -h, --help  Show this help message
-
+```
 # simple-kafka-consumer
-
+```
 Usage:
   simple-kafka-consumer [OPTIONS]
 
@@ -33,4 +38,4 @@ Application Options:
 
 Help Options:
   -h, --help     Show this help message
-
+```
