@@ -14,8 +14,8 @@ Usage:
 Application Options:
   -s=         Kafka server host (default: localhost:9092)
   -t=         Topic to publish to (default: sample)
-  -k=         Message Key. If -m is set as +, this should be either '+' for reading from stdin or
-              key value for sending same key for all messages.
+  -k=         Message Key. If -m is set as +, this should be '+' for reading from stdin; otherwise
+              the same key will be sent for all messages.
   -m=         File containing message value. If specified as '-', will read from stdin till an empty
               line is encountered. If specified as '+', every line in stdin will be published as one
               message till killed through ctrl+c. If value of '+' is accompanied by -k with '+',
